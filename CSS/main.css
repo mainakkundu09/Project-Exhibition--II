@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif; /* System fonts*/  /* Arial, Helvetica, sans-serif ,Times New Roman",Times,serif*/
+}
+
+.main-section {
+
+    background-color: red;
+    height: 70vh; /*view ports */
+
+    /* one,multi color,images */
+    /* background-color: red; */
+    /* background: linear-gradient(90deg,red,green,blue); multicolors   //by default top-bottom otherwise give 90deg or anticlockwise(-90deg) */
+    background-image: linear-gradient(transparent,#080808ca), 
+    url(../images/pets-mainBackground-image1.webp);
+    
+    background-size: 100%;
+    background-repeat: no-repaet;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    
+
+}
+
+/* 
+flex-direction: row;
+justify-content => works horizontally
+align-items => works vertically
+*/
+
+/* 
+flex-direction: column;
+justify-content => works vertically
+align-items => works horizontally(left to right)
+
+*/
+
+.main-section-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+
+/* .buttons {
+    background-color:blue;
+}
+
+ GROUP SELECTOR 
+  
+.brand-logo,
+.brand-caption,
+.search {
+    backgeround-color: 
+} */
+
+
+.login-button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    
+}
+
+.create-account-button {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 3px
+}
+
+.brand-logo {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius:45px; 
+
+/* 
+    fonts
+
+    change font
+    change size of font
+    set a text as italic 
+    set a text bold
+*/
+
+    font-size:42px;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    color:red;
+    font-size: 48px;
+    /* font-style: italic; */
+    font-weight: bold;
+    margin: 16px;
+   
+}
+
+.brand-caption {
+    font-size: 24px;
+    color: white;
+    margin: 16px 0px; /* top-bottom   left-right  */
+    font-weight: bold;
+}
+
+.serach {
+    
+    width: 40%;
+    display: flex;
+    justify-content:space-between;
+}
+/* Child selector */
+
+.search > input{
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+    outline:none;
+    
+}
+
+.location-search {
+    width :35%
+}
+
+.restaurant-search {
+    width: 63%
+}
+
+/* section */
+.quick-search-section{
+    padding:32px  72px;
+}
+.quick-search-title {
+    color:#192f60;
+}
+.quick-search-sub-title {
+    color:#8c96ab;
+}
+
+.quick-search-item {
+    height:28vh;
+    width:32%;
+    /* background-color:yellowgreen; */
+    display:flex;
+    /* border: 0.5px solid black;  */
+    margin-bottom:14px;
+
+    box-shadow: 0px 0px 5px 0px gray ;
+
+    /* x-axis        y-axis      blur(optional)      scale(optional)   color */
+    /* (left-right)  (top-bottom) */
+}
+.quick-search-item-image {
+    width: 45%;
+    height: 100%;
+    /*TESTING PURPOSE ONLY background-color: red; */
+
+}
+.quick-search-item-image > img {
+    width:100%;
+    height:100%;
+    
+}
+.quick-search-item-desc {
+    width: 55%;
+    height:100%;
+    padding:16px 28px;
+    /* background-color: brown; */
+
+}
+.desc-title{
+    font-weight: bold;
+    color:#192f60;
+    margin-bottom: 8px;
+    font-size:18px;
+}
+.desc-sub-title{
+    color:gray;
+    font-size:14px;
+}
+
+.quick-search-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:14px;
+    /* backgroun-color: yellow; */
+}
