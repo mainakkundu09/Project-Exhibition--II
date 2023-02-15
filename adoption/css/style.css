@@ -956,6 +956,7 @@ a:focus {
 
 .causes .causes-text {
     padding: 0 30px;
+    height: 170px;
 }
 
 .causes .causes-text h3 {
